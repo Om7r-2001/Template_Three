@@ -103,6 +103,35 @@ input:focus::placeholder {
   width: 51%;
   border-radius: 0;
 }
+.spikes {
+  position: relative;
+}
+.spikes::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(135deg, white 25%, transparent 25%),
+    linear-gradient(225deg, white 25%, transparent 25%);
+  width: 100%;
+  height: 30px;
+  background-size: 30px 30px;
+  z-index: 1;
+}
+.dots-up,
+.dots-down {
+  position: absolute;
+  background-image: url("../imgs/dots.png");
+  background-size: cover;
+  width: 200px;
+  height: 170px;
+  z-index: -2;
+}
+.dots-up {
+  top: 10%;
+  right: 0;
+}
+.dots-down {
+  bottom: 10%;
+}
 /* || End Componant */
 /* Start My Library */
 .flex {
@@ -334,6 +363,7 @@ header .mega-menu .links li a i {
 /* Start Articles */
 #articles {
   padding: var(--main-padding);
+  position: relative;
 }
 #articles .container {
   display: grid;
@@ -433,6 +463,7 @@ header .mega-menu .links li a i {
 /* Start Features */
 #features {
   padding: var(--main-padding);
+  position: relative;
 }
 #features .container {
   display: grid;
@@ -617,6 +648,7 @@ header .mega-menu .links li a i {
 /* || End Testimonials */
 /* Start Team */
 #team {
+  position: relative;
   padding: var(--main-padding);
 }
 #team .container {
@@ -788,6 +820,7 @@ header .mega-menu .links li a i {
 /* || End Services */
 /* Start Our-Skills */
 #our-skills {
+  position: relative;
   padding: var(--main-padding);
 }
 #our-skills .container {
@@ -907,6 +940,7 @@ img[alt="work-steps"] {
 /* || End Work-Steps */
 /* Start Events */
 #events {
+  position: relative;
   padding: var(--main-padding);
 }
 #events .container {
@@ -1130,6 +1164,7 @@ img[alt="pricing"] {
 /* || End Pricing */
 /* Start Videos */
 #videos {
+  position: relative;
   padding: var(--main-padding);
 }
 #videos .container {
